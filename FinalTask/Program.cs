@@ -37,4 +37,15 @@ string[] CheckingArrayElements(string[] stringArray1)
   return array2;
 }
 
+void PrintArray2(string[] stringArray1)
+{
+  Console.Write("[");
+  for (int i = 0; i < stringArray1.Length; i++)
+  {
+    Console.Write($"'{stringArray1[i]}',");
+  }
+  Console.Write("]");
+}
+
 InputArrayElements(stringArray1);
+PrintArray2(CheckingArrayElements(stringArray1));
